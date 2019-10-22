@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12">
+        <mat-card>
+            <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="singleSlideOffset" noWrap="noWrap"
+                [showIndicators]="false" interval="cycleInterval" [startFromIndex]="0">
+                <slide *ngFor="let sub of (DetailMegaProcess |async).sub_mega_process ; let i = index" id="car"
+                    class="mx-auto">
+                    <button mat-raised-button style="display: block; width: 95%;"
+                        (click)="selectedIndex = i;subProcessClicked(sub.id)"
+                        [ngClass]="selectedIndex === i ? 'btn-telecom-fill' : 'btn-telecom-border'">{{sub.name}}
+                    </button>
+
+                </slide>
+            </carousel>
+        </mat-card>
+    </div>
+</div>
+
+
+
+
+<div class="graph-module">
+    <app-dashboard-graphs></app-dashboard-graphs>
+</div>
+<div class="graph-module">
+    <app-assesment-control [categoriesData]="CategoriesControlList"></app-assesment-control>
+</div>

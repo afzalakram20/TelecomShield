@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4"> chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security</div>
+            <div class="col-md-4">
+
+                <mat-card class="card-cls">
+                    <form class="form" [formGroup]="form ">
+                        <div class="row">
+                            <mat-form-field>
+                                <input matInput placeholder="Enter Your User Name" formControlName="userName">
+                            </mat-form-field>
+                        </div>
+                        <div class="row">
+                            <mat-form-field>
+                                <input matInput placeholder="Enter your Password" type="password"
+                                    formControlName="password">
+                            </mat-form-field>
+                        </div>
+
+
+                    </form>
+                    <div class="row">
+                        <button class="btn btn-lg btn-telecom login-btn" (click)="login()">Login</button>
+                    </div>
+                    <div class="row">
+                        <div style="font-size: 18px; margin-top:20px">
+                            <p>By signing to this app, you agree to the<span class="telecom-text"><b> Marketing
+                                        Dashboard
+                                        End
+                                        User
+                                        Licence Agreement </b></span> and
+                                acknowledge the Privacy Policy</p>
+                        </div>
+                    </div>
+                </mat-card>
+
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+
+</div>

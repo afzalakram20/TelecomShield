@@ -1,0 +1,107 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-toastr/toastr.css';
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; font-size: 13px; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+ }
+html{
+
+    --txtClr:black;
+    --clr:#4773d9;
+    
+
+}
+html[data-theme='yellow']{
+    --clr:#fdd35f;
+    --txtClr:black;
+}
+
+
+
+$theme-color:(
+    "telecom":var(--clr),
+);
+
+
+
+
+
+
+ .btn-telecom{
+// background-color: var(  --clr);
+border:1px solid var(--clr);
+ }
+ .btn-telecom:hover{
+    background-color: var(--clr);
+ }
+.telecom:hover {
+background-color: var(--clr) !important
+}
+.telecom:focus{
+    background-color: var(--clr) !important
+}
+.sideNavtelecomActive{
+    background-color: var(--clr);
+    color: var(--txtClr);
+
+}
+.carousel{
+    margin:0px 5% !important
+}
+.telecom-text{
+    color:var(--clr)
+}
+.btn-telecom-fill{
+    color:white;
+    background-color: var(--clr);
+}
+.btn-telecom-border{
+    border:1px solid var(--clr);
+}
+//For the dashboard Pages when the button is not clicked
+.btn-telecom-border.mat-raised-button{
+        border:1px solid var(--clr);
+}
+.btn-telecom-fill.mat-raised-button{
+    background-color: var(--clr);
+}
+
+
+
+
+//it will remove the blue outline from the  buttons
+button{
+    outline: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after{
+    transition:all 750ms !important;
+    transition-delay:0 !important;
+}
